@@ -65,9 +65,9 @@ function displayTweets(wordList,append=false) {
     content.className = 'content';
       // 単語がundefinedかどうかで表示を変える
       if (item.word === undefined) {
-        content.innerHTML = `${item.answer}`;
+        content.innerHTML = `<span class="answer">${item.answer}`;
       } else {
-        content.innerHTML = `<span class="word">${item.word}</span>:${item.answer}`;
+        content.innerHTML = `<span class="word">${item.word}<span class="answer">:${item.answer}`;
       }
   
 
